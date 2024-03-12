@@ -1,0 +1,346 @@
+/* css variable */
+
+:root {
+  --red: red;
+}
+
+/*when section is navigated it direct to section smoothly*/
+html {
+   scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Times New Roman', Times, serif;
+  margin: 0;
+}
+nav a {
+  color: #13293d;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+header {
+  /*Applied with flex-direction with justify content to spacing-between */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+  text-align: center;
+  background: #364282;
+  border:4px solid #e5f5aa;
+  color: #fff;
+  /*changed font properties on heading that is different from reset.css*/
+  font-size: 120%;
+  font-weight: 100;
+  font-style: normal;
+  text-transform: none;
+  text-decoration: none;
+
+}/* Yong Yun Portpolio larger font  */
+h1 {
+  font-size: 50px;
+  }
+nav {
+    display: flex;
+    background-color: #f6f5f4;
+  }
+
+  main section {
+
+    padding:  10px;
+    
+    }
+
+  .Flexible-Image{
+    
+    width: 100%; /* Makes the image width 100% of the viewport width */
+    
+  }
+
+  .AboutMe {
+    display: flex;
+    
+  }
+
+  .work {
+
+    display: flex;
+  }
+  .contact{
+   
+    display: flex;
+  }
+  
+  .section1 {
+    flex-grow: 1; /* This section will take up twice as much space as section2 */
+    padding: 20px;
+    flex-basis: 150px;
+    margin: 10px;
+    border-right: 5px solid #6b54e9;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  .section2 {
+    flex-grow: 2; /* This section will take up half the space of section1 */
+    padding: 20px;
+    border: 1px solid #ccc;
+   
+    width: 90%;
+    margin: 10px;
+    border-color: rgb(17, 18, 18);
+  }
+
+  .yongwooimagecontainer {
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:safe; /* align the content */
+    align-items: center; 
+    background-color: #e7dddd;
+   
+    padding: 30px;
+    border: 1px solid rgb(243, 6, 6);
+    font-family:'Times New Roman', Times, serif;
+  
+  
+  }
+
+  .box {
+ 
+    /* Adjust margin to create spacing between boxes */
+    margin-right: 10px; /* Change this value as needed */
+  }
+  .box.point {
+    flex: 2 1 200px;
+   }
+ 
+  .yongwooimagecontainer img {
+    width: 150px; 
+   }
+
+   .Experiences.scrollable-div {
+    width: 100%; /* Adjust width as needed */
+    height: 600px; /* Adjust height as needed */
+    overflow: auto; /* Enable scrolling for overflow content */
+    
+  }
+  
+  .skill-summary {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .skill-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .skills-list {
+    margin-top: 10px;
+  }
+
+  .skills-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  .experience {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .company {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .position {
+    font-style: italic;
+  }
+  
+  .duties ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .contact-label {
+    font-weight: bold;
+  }
+  
+  .contact-item {
+    margin-bottom: 5px;
+  }
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #b2c7db;
+    color: #fff;
+  }
+  
+/*adding psedo-elements */
+button::before{
+
+  font-family:impact;
+  content: '\2766';
+  color:#772014;
+  padding: 2%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+* button Pseudo classes */
+button {
+
+  width: 100px;
+  height: 30px;
+  padding :2px;
+  margin: 10px;
+  text-align: center;
+  background-color: pink;
+
+}
+
+button:hover {
+background-color: rgb(242, 122, 122);
+
+}
+button:focus {
+  outline: none;
+  border-color: rgb(27, 110, 62);
+}
+button:acive{
+
+  font-size: 150%;
+  box-shadow: 0 0 10px #000 inset;
+}
+
+.Experiences {
+  background-color: #fff;
+  width: 100%;
+  padding: 1px;
+  height: 95%;
+  border: 1px solid black;
+}
+
+
+  /* any p element winthin form will be red */
+/* css variable */
+
+form p {
+
+  color: var(--red);
+  font-family:'Times New Roman', Times, serif;
+
+}
+
+  /* form properties */
+
+select {
+  
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.text-input {
+  width: 100%;
+  max-width: 100%;
+}
+
+.text-input, select {
+  padding: 1%;
+  outline: none;
+  border: 1px solid #b9C6ae;
+}
+
+
+
+
+.text-input:hover, .checkbox:hover, 
+select:hover, button:hover {
+  box-shadow: 0 0 5px #c00303;
+}
+
+
+
+
+.text-input:focus {
+  border-right-width: 5px;
+}
+
+
+.text-input:placeholder-shown {
+  border-style: dashed;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row select {
+  flex: 1 0 0;
+  margin-left: 2%;
+}
+
+.flex-row input {
+  margin-right: 2%;
+}
+
+
+.checkbox:checked + label {
+  color: #999999;
+  font-style: italic;
+}
+
+
+.checkbox:checked + label::after {
+  margin-left: 10px;
+  font-size: 90%;
+  content: "(Yong Yun Will Contact You Soon)";
+}
+
+
+@media screen and (max-width: 1000px) {
+  /* Use flex-direction to stack the navbar, sidebar, and body */
+  main, footer,
+  nav {
+    flex-direction: column;
+  }
+  /* Change the header background */
+  header {
+    background: #6cede4;
+
+  
+
+  }
+
+
+  .yongwooimagecontainer {
+  
+    
+    background-color: #f07878;
+ 
+  
+  }
+
+
+
+}
+
+
