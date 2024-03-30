@@ -89,11 +89,14 @@ nav {
   }
   
   .section2 {
+    
+ 
+    
     flex-grow: 2; /* This section will take up half the space of section1 */
     padding: 20px;
     border: 1px solid #ccc;
-   
-    width: 90%;
+    max-height: auto;
+    width: 60%;
     margin: 10px;
     border-color: rgb(17, 18, 18);
   }
@@ -319,7 +322,7 @@ select:hover, button:hover {
 @media screen and (max-width: 1000px) {
   /* Use flex-direction to stack the navbar, sidebar, and body */
   main, footer,
-  nav {
+  nav{
     flex-direction: column;
   }
   /* Change the header background */
@@ -342,5 +345,61 @@ select:hover, button:hover {
 
 
 }
+
+
+.bottom-image {
+  transition: opacity 0.3s ease;
+}
+
+.bottom-image:hover {
+  opacity: 0.7;
+}
+
+.top-image {
+  transition: opacity 0.3s ease;
+}
+
+.top-image:hover {
+  opacity: 0.7;
+}
+
+.image-container {
+  position: relative;
+  width: 100%; 
+  height: 100%; 
+}
+
+.image-container img.top-image {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
+  z-index: 1;
+}
+
+
+.row {
+  display: flex;
+
+  width: 100%;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.row img.top-image {
+  width: 100%; /* Adjust as needed */
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  height: auto;
+  object-fit: cover;
+  margin: 0 5px; /* Adjust as needed */
+}
+
+.row img.bottom-image {
+  width: 100%; /* Adjust as needed */
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  height: 100%;
+  object-fit: cover;
+  margin: 0 5px; /* Adjust as needed */
+}
+
+
 
 
