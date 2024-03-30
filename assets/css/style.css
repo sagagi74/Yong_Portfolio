@@ -322,7 +322,7 @@ select:hover, button:hover {
 @media screen and (max-width: 1000px) {
   /* Use flex-direction to stack the navbar, sidebar, and body */
   main, footer,
-  nav{
+  nav {
     flex-direction: column;
   }
   /* Change the header background */
