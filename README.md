@@ -33,11 +33,11 @@ and Ensure that clicking on a featured application opens the corresponding deplo
               <img class="bottom-image" src="./assets/images/html_css.jpg" alt="Html CSS Skills">
               </a>
             
-              <a href="https://sagagi74.github.io/Yong_Portfolio/" target="_blank"> 
-              <img class="bottom-image" src="./assets/images/yong_portfolio.png" alt="Yong Portfolio">
+             <a href="https://sagagi74.github.io/My_Calendar/" target="_blank"> 
+              <img class="bottom-image" src="./assets/images/calendar.jpg" alt="Work_Day_Scheduler">
               </a>
              
-        
+             
 
 In this project, I have covered all the class materials and add comment section on CSS file
 
